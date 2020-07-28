@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bmft.dao.UserMapper">
+    <!--开启此Mapper 的二级缓存-->
+    <cache/>
+    <!--显式地开启或者关闭 select的二级缓存 useCache="true" -->
+    <select useCache="true" id="getUserById" parameterType="map" resultType="user">
+        select * from mybatis.user where id = #{id}
+    </select>
+</mapper>

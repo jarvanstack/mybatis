@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!--原来的实现类现在变成了配置文件-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bmft.dao.UserMapper">
+    <resultMap id="UserMap" type="User">
+        <result column="id" property="userId"/>
+    </resultMap>
+    <!--结果集映射，数据库的字段为，id，pojo的属性为，userId-->
+    <!--resultMap的名字随便取，对应就行-->
+    <select id="getUserList" parameterType="int" resultMap="UserMap">
+        SELECT id , name, password FROM `mybatis`.`user`
+    </select>
+</mapper>

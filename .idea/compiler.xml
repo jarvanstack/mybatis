@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="多和一" />
+        <module name="Cache缓存" />
+        <module name="hello-mybatis" />
+        <module name="练习题smbms" />
+        <module name="动态SQL" />
+        <module name="结果集映射" />
+        <module name="注解SQL" />
+        <module name="一对多" />
+        <module name="日志" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+</project>

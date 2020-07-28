@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bmft.dao.UserMapper">
+    <select id="login" parameterType="map" resultType="user">
+        select smbms_user.*,
+               smbms_role.roleName as userRoleName
+        from smbms.smbms_user,
+             smbms.smbms_role
+        where userCode = #{userCode}
+          and userPassword = #{userPassword}
+          and smbms_user.userRole = smbms_role.id
+    </select>
+
+    <update id="updatePassword" parameterType="map">
+        update smbms.smbms_user
+        <set>
+            <if test="userCode !=null">
+                userCode = #{userCode}
+            </if>
+            <if test="userName!=null">
+                userName = #{userName}
+            </if>
+            <if test="gender!=null">
+                gender = #{gender}
+            </if>
+            <if test="birthday!=null">
+                gender = #{gender}
+            </if>
+            <if test="phone!=null">
+                gender = #{gender}
+            </if>
+            <if test="address!=null">
+                gender = #{gender}
+            </if>
+            <if test="userRole!=null">
+                gender = #{gender}
+            </if>
+            <if test="createdBy!=null">
+                gender = #{gender}
+            </if>
+            <if test="creationDate!=null">
+                gender = #{gender}
+            </if>
+            <if test="modifyBy!=null">
+                gender = #{gender}
+            </if>
+            <if test="modifyDate!=null">
+                gender = #{gender}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <select id="getUserCount" resultType="_int" parameterType="map">
+        select count(1)
+        from smbms.smbms_user
+        <where>
+            <if test="userName!=null">
+                userName like #{userName}
+            </if>
+            <if test="userRole!=null">
+                and userRole = #{userRole}
+            </if>
+        </where>
+    </select>
+
+    <select id="getUserList" parameterType="map" resultType="user">
+        select smbms.smbms_user.*
+        from smbms.smbms_user
+        <where>
+            <if test="userName!=null">
+                and userName like #{userName}
+            </if>
+            <if test="userRole!=null">
+                and userRole = #{userRole}
+            </if>
+
+        </where>
+        <choose>
+            <when test="startIndex !=null and pageSize !=null">
+                limit #{startIndex},#{pageSize}
+            </when>
+            <when test="pageSize !=null">
+                limit 0,#{pageSize}
+            </when>
+            <otherwise>
+                limit 0,5
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="getUserById" parameterType="map" resultType="user">
+        select smbms.smbms_user.*
+        from smbms.smbms_user
+        where id = #{id}
+    </select>
+    <insert id="addUser" parameterType="user">
+        INSERT INTO smbms.smbms_user ( userCode, userName, userPassword, gender, birthday, phone, address, userRole, createdBy, creationDate, modifyBy, modifyDate )
+        VALUES
+        (#{userCode}, #{userName}, #{userPassword}, #{gender},
+         #{birthday}, #{phone}, #{address}, #{userRole}, #{createdBy},
+         #{creationDate}, #{modifyBy}, #{modifyDate});
+    </insert>
+
+    <select id="userCodeExist" parameterType="String" resultType="_boolean" >
+        select * from smbms.smbms_user
+        where  userCode = #{userCode}
+    </select>
+
+    <update id="modifyUser" parameterType="map">
+        update smbms.smbms_user
+        <set>
+            <if test="userName!=null">
+                userName = #{userName}
+            </if>
+            <if test="userPassword!=null">
+                userPassword = #{userPassword}
+            </if>
+            <if test="gender!=null">
+                gender = #{gender}
+            </if>
+            <!---后面还有很多就不再展示了，赞空间又没用-->
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="map">
+        delete from smbms.smbms_user where id = #{id}
+    </delete>
+</mapper>

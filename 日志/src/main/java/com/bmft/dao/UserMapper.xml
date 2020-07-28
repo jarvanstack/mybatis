@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!--原来的实现类现在变成了配置文件-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.bmft.dao.UserMapper">
+
+    <!--select查询语句-->
+    <!--id 就是接口名称，结构类型对应实体类的类型-->
+    <select id="getUserList" parameterType="int" resultType="user">
+        SELECT * FROM `mybatis`.`user`
+    </select>
+    <!-- 1.List<User> getUserById(User user);-->
+    <select id="getUserById" parameterType="com.bmft.pojo.User" resultType="com.bmft.pojo.User">
+        select * from mybatis.user where id = #{id};
+    </select>
+
+    <!--nt insertUser(User user);-->
+    <insert id="insertUser" parameterType="com.bmft.pojo.User" >
+        insert into mybatis.user (id, name, password) value (#{id},#{name},#{password});
+    </insert>
+    <update id="updateUser" parameterType="com.bmft.pojo.User">
+        update mybatis.user
+        set  name = #{name},
+            password = #{password}
+        where id = #{id};
+    </update>
+
+    <delete id="deleteUser" parameterType="com.bmft.pojo.User">
+    <!--删除有一个from-->
+<!--如果SQL写错，会报错 初始化失败 -->
+        delete from mybatis.user where id = #{id};
+    </delete>
+</mapper>

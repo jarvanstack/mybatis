@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部配置文件+内部-->
+    <properties resource="db.properties">
+    </properties>
+    <!--日志-->
+    <settings>
+        <!--mybatis自带日志-->
+        <setting name="logImpl" value="LOG4J"/>
+        <!--设置下划线和驼峰的自动映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!--起别名-->
+    <typeAliases>
+        <package name="com.bmft.pojo"/>
+    </typeAliases>
+    <!--默认选择第一套环境-->
+    <environments default="test01">
+
+        <!--用于测试的环境-->
+        <environment id="test01">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url"
+                          value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--每个mapper.xml都要配置-->
+    <mappers>
+        <package name="com.bmft.dao"/>
+    </mappers>
+</configuration>

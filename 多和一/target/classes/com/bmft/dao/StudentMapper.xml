@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--记得一定要namespace-->
+<mapper namespace="com.bmft.dao.StudentMapper">
+
+    <select id="getStudentTeacher01" resultMap="map01">
+        select mybatis.student.*
+        from mybatis.student;
+    </select>
+    <resultMap id="map01" type="student">
+        <association property="teacher" column="tid"
+                     javaType="teacher" select="getTeacherList"/>
+    </resultMap>
+    <select id="getTeacherList" resultType="teacher">
+        select mybatis.teacher.*
+        from mybatis.teacher
+        where id = #{uid};
+    </select>
+    <!--========================02我最常用的连表查询  =================-->
+    <select id="getStudentTeacher02" resultMap="map02">
+        select
+               s.id  ,
+               s.name ,
+               t.name ,
+               t.password
+        from mybatis.student as s,
+             mybatis.teacher as t
+        where tid = t.id;
+    </select>
+    <resultMap id="map02" type="Student">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <association property="teacher" javaType="teacher">
+            <result property="name" column="name"/>
+            <result property="password" column="password"/>
+        </association>
+    </resultMap>
+</mapper>

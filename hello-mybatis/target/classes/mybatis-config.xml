@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部配置文件+内部-->
+    <properties resource="db.properties">
+        <property name="username" value="哈哈哈"/>
+        <property name="password" value="呵呵呵"/>
+    </properties>
+    <!--起别名-->
+    <typeAliases>
+        <package name="com.bmft.pojo"/>
+    </typeAliases>
+    <!--默认选择第一套环境-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="612001"/>
+            </dataSource>
+        </environment>
+        <!--用于测试的环境-->
+        <environment id="test01">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}}"/>
+                <property name="url"
+                          value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+        <!--其他数据库类型的环境都可以-->
+        <environment id="oracle">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="612001"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--每个mapper.xml都要配置-->
+    <mappers>
+        <!--1.resource 【推荐使用，用一个配一个】
+        <mapper resource="com/bmft/mapper/UserMapper.xml"/>
+        -->
+        <!-- 2. 通过接口类反向 【同名+同package】
+        <mapper class="com.bmft.mapper.UserMapper"></mapper>
+        -->
+        <package name="com.bmft.mapper"/>
+    </mappers>
+</configuration>

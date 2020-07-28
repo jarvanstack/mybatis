@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--记得一定要namespace-->
+<mapper namespace="com.bmft.dao.TeacherMapper">
+    <select id="getTeacherList" resultType="teacher">
+        select * from mybatis.teacher ;
+    </select>
+    <!--================上面是环境测试===============-->
+    <!--================下面实现一对多listStudent===============-->
+    <select id="getTeacherStudent" resultMap="map03">
+        SELECT
+            t.id as tid,
+            t.name as tname,
+            s.id as sid,
+            s.name as sname
+        FROM
+            mybatis.teacher AS t,
+            mybatis.student AS s
+        WHERE
+            t.id = s.tid
+    </select>
+    <resultMap id="map03" type="teacher">
+        <result property="id" column="tid"/>
+        <result property="name" column="tname"/>
+        <!--注意这里的ofType等同于 之前的 javaType-->
+        <collection property="students" ofType="student">
+            <result property="id" column="sid"/>
+            <result property="name" column="sname"/>
+        </collection>
+    </resultMap>
+
+</mapper>

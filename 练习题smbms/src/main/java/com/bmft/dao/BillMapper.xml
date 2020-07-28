@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bmft.dao.BillMapper">
+    <select id="getBillList" resultType="bill" parameterType="map">
+        SELECT
+        smbms.smbms_bill.*,
+        smbms.smbms_provider.proName as providerName
+        FROM
+        smbms.smbms_bill,
+        smbms.smbms_provider
+        <where>
+            smbms.smbms_bill.providerId = smbms.smbms_provider.id
+            <if test="proName!=null">
+                and proName like #{proname}
+            </if>
+            <if test="providerId!=null">
+                and providerId = #{providerId}
+            </if>
+            <if test="isPayment!=null">
+                and isPayment = #{isPayment}
+            </if>
+        </where>
+        <choose>
+            <when test="startIndex !=null and pageSize !=null">
+                limit #{startIndex},#{pageSize}
+            </when>
+            <when test="pageSize !=null">
+                limit 0,#{pageSize}
+            </when>
+            <otherwise>
+                limit 0,5
+            </otherwise>
+        </choose>
+    </select>
+    <select id="getBillById" parameterType="String" resultType="bill">
+        select *
+        from smbms.smbms_bill
+        where id = #{id}
+    </select>
+    <insert id="addBill" parameterType="bill">
+        insert into smbms.smbms_bill
+        (billCode, productName,
+         productDesc, productUnit,
+         productCount, totalPrice,
+         isPayment, createdBy, creationDate,
+         modifyBy, modifyDate, providerId)
+        values (#{billCode}, #{productName},
+                #{productDesc}, #{productUnit},
+                #{productCount}, #{totalPrice},
+                #{isPayment}, #{createdBy}, #{creationDate},
+                #{modifyBy}, #{modifyDate}, #{providerId})
+    </insert>
+    <update id="modifyBill" parameterType="bill">
+        update smbms.smbms_bill
+        <set>
+            <if test="productName!=null">
+                productName = #{productName}
+            </if>
+            <!--后面可以有很多if，这里不赘述-->
+        </set>
+        where id = #{id}
+    </update>
+    <delete id="deleteBillById" parameterType="String">
+        delete
+        from smbms.smbms_bill
+        where id = #{id}
+    </delete>
+</mapper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--记得一定要namespace-->
+<mapper namespace="com.bmft.dao.TeacherMapper">
+    <select id="getTeacherList" resultType="teacher">
+        select * from mybatis.teacher ;
+    </select>
+</mapper>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="997fe6b4-2369-47f9-8f0e-bf86fec93188" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mybatis" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Enviroment\maven\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven" />
+        <option name="userSettingsFile" value="D:\Enviroment\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1f5PQ3dqEjaZlWQ0Puv4Jzm3knL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="13" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/结果集映射/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/练习题smbms/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.49343833" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Enviroment\java\Mybatis\练习题smbms\src\main\resources" />
+      <recent name="D:\Enviroment\java\Mybatis\练习题smbms\src\main\java\com\bmft\pojo" />
+      <recent name="D:\Enviroment\java\Mybatis\练习题smbms\src\main\java\com.bmft.dao" />
+      <recent name="D:\Enviroment\java\Mybatis\练习题smbms\src\main" />
+      <recent name="D:\Enviroment\java\Mybatis\练习题smbms\src\main\java\com\mbft\smbms\util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bmft.dao" />
+      <recent name="com.mbft.util" />
+      <recent name="com.mbft.util.utils" />
+      <recent name="" />
+      <recent name="com.bmft.mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Enviroment\java\Mybatis\多和一\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BillTest.deleteBillById">
+    <configuration name="BillTest.addBill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="练习题smbms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BillTest" />
+      <option name="METHOD_NAME" value="addBill" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillTest.deleteBillById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="练习题smbms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BillTest" />
+      <option name="METHOD_NAME" value="deleteBillById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillTest.getBillById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="练习题smbms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BillTest" />
+      <option name="METHOD_NAME" value="getBillById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillTest.getBillList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="练习题smbms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BillTest" />
+      <option name="METHOD_NAME" value="getBillList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillTest.modifyBill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="练习题smbms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BillTest" />
+      <option name="METHOD_NAME" value="modifyBill" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BillTest.deleteBillById" />
+        <item itemvalue="JUnit.BillTest.modifyBill" />
+        <item itemvalue="JUnit.BillTest.addBill" />
+        <item itemvalue="JUnit.BillTest.getBillById" />
+        <item itemvalue="JUnit.BillTest.getBillList" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@62bda2d" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="997fe6b4-2369-47f9-8f0e-bf86fec93188" name="Default Changelist" comment="" />
+      <created>1595504960307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595504960307</updated>
+      <workItem from="1595504965021" duration="6556000" />
+      <workItem from="1595513155662" duration="15836000" />
+      <workItem from="1595591887331" duration="21138000" />
+      <workItem from="1595680693282" duration="14306000" />
+      <workItem from="1595746412514" duration="1104000" />
+      <workItem from="1595845399119" duration="2485000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="343" y="65" key="#AnnotationTest" timestamp="1595590311948">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="343" y="65" key="#AnnotationTest/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595590311948" />
+    <state x="360" y="70" key="#Project_Structure" timestamp="1595731226017">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="70" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595731226017" />
+    <state x="360" y="70" key="#SQL_Resolution_Scopes" timestamp="1595733547213">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="70" key="#SQL_Resolution_Scopes/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595733547213" />
+    <state x="360" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595726255624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595726255624" />
+    <state x="573" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1595509292941">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="573" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595509292941" />
+    <state x="547" y="270" width="441" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595579340162">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="547" y="270" width="441" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595579340162" />
+    <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595666416995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595666416995" />
+    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1595725673150">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595725673150" />
+    <state width="1491" height="28" key="GridCell.Tab.0.bottom" timestamp="1595916030907">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="28" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595916030907" />
+    <state width="1491" height="28" key="GridCell.Tab.0.center" timestamp="1595916030907">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="28" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595916030907" />
+    <state width="1491" height="28" key="GridCell.Tab.0.left" timestamp="1595916030906">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="28" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595916030906" />
+    <state width="1491" height="28" key="GridCell.Tab.0.right" timestamp="1595916030907">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="28" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595916030907" />
+    <state width="1491" height="333" key="GridCell.Tab.1.bottom" timestamp="1595591869058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595591869058" />
+    <state width="1491" height="333" key="GridCell.Tab.1.center" timestamp="1595591869058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595591869058" />
+    <state width="1491" height="333" key="GridCell.Tab.1.left" timestamp="1595591869058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595591869058" />
+    <state width="1491" height="333" key="GridCell.Tab.1.right" timestamp="1595591869058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595591869058" />
+    <state x="298" y="66" key="Maven.ArtifactSearchDialog" timestamp="1595582519283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="298" y="66" key="Maven.ArtifactSearchDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595582519283" />
+    <state x="178" y="55" width="998" height="715" key="SettingsEditor" timestamp="1595725663112">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="55" width="998" height="715" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595725663112" />
+    <state x="564" y="189" key="chooseDestDirectoryDialog" timestamp="1595579245079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="189" key="chooseDestDirectoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595579245079" />
+    <state x="522" y="165" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1595731920038">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="165" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595731920038" />
+    <state x="2479" y="297" key="com.intellij.ide.util.TipDialog" timestamp="1595680784369">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2479" y="297" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595680784369" />
+    <state x="484" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595589881312">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="484" y="305" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595589881312" />
+    <state x="1920" y="0" width="922" height="809" maximized="true" key="dock-window-1" timestamp="1595729986406">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="922" height="809" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595729986406" />
+    <state x="1982" y="104" width="1550" height="838" key="dock-window-2" timestamp="1595741271381">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1982" y="104" width="1550" height="838" key="dock-window-2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595741271381" />
+    <state x="2085" y="53" width="1160" height="809" maximized="true" key="dock-window-3" timestamp="1595640989582">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2085" y="53" width="1160" height="809" maximized="true" key="dock-window-3/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595640989582" />
+    <state x="177" y="106" key="new project wizard" timestamp="1595742345321">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="177" y="106" key="new project wizard/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595742345321" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1595740864186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595740864186" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595669643300">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595669643300" />
+  </component>
+</project>
